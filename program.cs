@@ -10,7 +10,7 @@ class Program
 
     static void Main(string[] args)
     {
-        // Step 1: Read input from the console
+        // Read input from the console
         Console.WriteLine("Enter the grid size (N) and number of words (M) separated by space:");
         string[] firstLine = Console.ReadLine().Split(' ');
         
