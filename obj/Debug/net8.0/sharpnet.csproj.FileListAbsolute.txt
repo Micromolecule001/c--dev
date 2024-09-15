@@ -12,3 +12,4 @@
 /home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.pdb
 /home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.genruntimeconfig.cache
 /home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/ref/sharpnet.dll
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.sourcelink.json
