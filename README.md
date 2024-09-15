@@ -16,6 +16,7 @@ BAT
 CST
 
 Enter the list of words (one word per line):
+
 CAT
 
 Searching for the word: CAT
@@ -23,6 +24,7 @@ DFS at (0, 0) - matched letter 'C' for word 'CAT'
 DFS at (0, 1) - matched letter 'A' for word 'CAT'
 DFS at (0, 2) - matched letter 'T' for word 'CAT'
 Word 'CAT' found and removed from the grid.
+
 Remaining grid after removing all words:
 
 * * * 
@@ -31,6 +33,7 @@ C S T
 
 Remaining letters in alphabetical order:
 ABCSTT
+
 ```
 
 
