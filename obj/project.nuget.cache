@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "re4Xx94liS46bzbGzMtQJ5yMFIf3q3OxUFvkEJ3Aw8humtJ779u0MsTetHb8MR0yInyMlP3IkuOI9ypQwHtXyQ==",
+  "success": true,
+  "projectFilePath": "/home/micromolecule001/Projects/sharpnet/sharpnet.csproj",
+  "expectedPackageFiles": [
+    "/home/micromolecule001/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}

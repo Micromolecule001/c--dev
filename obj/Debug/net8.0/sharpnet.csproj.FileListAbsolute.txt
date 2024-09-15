@@ -1,0 +1,14 @@
+/home/micromolecule001/Projects/sharpnet/bin/Debug/net8.0/sharpnet
+/home/micromolecule001/Projects/sharpnet/bin/Debug/net8.0/sharpnet.deps.json
+/home/micromolecule001/Projects/sharpnet/bin/Debug/net8.0/sharpnet.runtimeconfig.json
+/home/micromolecule001/Projects/sharpnet/bin/Debug/net8.0/sharpnet.dll
+/home/micromolecule001/Projects/sharpnet/bin/Debug/net8.0/sharpnet.pdb
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.GeneratedMSBuildEditorConfig.editorconfig
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.AssemblyInfoInputs.cache
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.AssemblyInfo.cs
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.csproj.CoreCompileInputs.cache
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.dll
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/refint/sharpnet.dll
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.pdb
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/sharpnet.genruntimeconfig.cache
+/home/micromolecule001/Projects/sharpnet/obj/Debug/net8.0/ref/sharpnet.dll
