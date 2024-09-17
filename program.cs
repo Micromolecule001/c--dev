@@ -117,7 +117,7 @@ class Program
     }
 
     // Function to find and remove a word from the grid
-    static bool FindAndRemoveWord(char[,] grid, string word, int N)
+    public static bool FindAndRemoveWord(char[,] grid, string word, int N)
     {
         for (int i = 0; i < N; i++)
         {
