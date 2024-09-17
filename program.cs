@@ -10,7 +10,7 @@ class Program
 
     static void Main(string[] args)
     {
-        // Step 1: Read input from the console
+        // Read input from the console
         Console.WriteLine("Enter the grid size (N) and number of words (M) separated by space:");
         string[] firstLine = Console.ReadLine().Split(' ');
         
@@ -21,7 +21,7 @@ class Program
 
         char[,] grid = new char[N, N];
 
-        // Step 2: Read the grid
+        // Read/add new row to the grid each itteration 
         Console.WriteLine("Enter the grid (one line at a time):");
         for (int i = 0; i < N; i++)
         {
@@ -32,7 +32,7 @@ class Program
             }
         }
 
-        // Step 3: Read the list of words
+        // Get list of words from user the list of words
         List<string> words = new List<string>();
         Console.WriteLine("Enter the list of words (one word per line):");
         for (int i = 0; i < M; i++)
@@ -40,7 +40,7 @@ class Program
             words.Add(Console.ReadLine());
         }
 
-        // Step 4: Process each word and remove it from the grid
+        // Process each word and remove it from the grid
         foreach (string word in words)
         {
             Console.WriteLine($"Searching for the word: {word}");
@@ -55,7 +55,7 @@ class Program
             }
         }
 
-        // Step 5: Collect remaining letters in the grid
+        // Collect remaining letters in the grid
         List<char> remainingLetters = new List<char>();
 
         Console.WriteLine("Remaining grid after removing all words:");
@@ -72,13 +72,13 @@ class Program
             Console.WriteLine();  // Newline after each row of the grid
         }
 
-        // Step 6: Sort and output the remaining letters in alphabetical order
+        // Sort and output the remaining letters in alphabetical order
         remainingLetters.Sort();
         Console.WriteLine("Remaining letters in alphabetical order:");
         Console.WriteLine(string.Join("", remainingLetters));
     }
 
-    // Function to perform DFS and find the word in the grid
+    // Function to perform DepthFirstSearch and find the word in the grid
     static bool DFS(char[,] grid, string word, int x, int y, int index, int N)
     {
         if (index == word.Length)  // If we've found the entire word
@@ -103,6 +103,7 @@ class Program
         {
             int newX = x + dx[i];
             int newY = y + dy[i];
+
             if (DFS(grid, word, newX, newY, index + 1, N))
             {
                 return true;
@@ -116,7 +117,7 @@ class Program
     }
 
     // Function to find and remove a word from the grid
-    static bool FindAndRemoveWord(char[,] grid, string word, int N)
+    public static bool FindAndRemoveWord(char[,] grid, string word, int N)
     {
         for (int i = 0; i < N; i++)
         {

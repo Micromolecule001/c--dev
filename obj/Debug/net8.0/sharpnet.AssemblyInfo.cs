@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("sharpnet")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1656f7365e2a41ce2470e2c6a4d72342466b1774")]
 [assembly: System.Reflection.AssemblyProductAttribute("sharpnet")]
 [assembly: System.Reflection.AssemblyTitleAttribute("sharpnet")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
