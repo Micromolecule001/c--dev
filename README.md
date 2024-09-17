@@ -3,7 +3,9 @@
 
 ## Usage/Examples
 
-```javascript
+```
+dotnet run
+
 Enter the grid size (N) and number of words (M) separated by space:
 
 3 1
