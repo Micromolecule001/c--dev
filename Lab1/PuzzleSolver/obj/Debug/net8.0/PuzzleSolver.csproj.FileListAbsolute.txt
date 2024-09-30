@@ -1,0 +1,15 @@
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/bin/Debug/net8.0/PuzzleSolver
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/bin/Debug/net8.0/PuzzleSolver.deps.json
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/bin/Debug/net8.0/PuzzleSolver.runtimeconfig.json
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/bin/Debug/net8.0/PuzzleSolver.dll
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/bin/Debug/net8.0/PuzzleSolver.pdb
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.GeneratedMSBuildEditorConfig.editorconfig
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.AssemblyInfoInputs.cache
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.AssemblyInfo.cs
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.csproj.CoreCompileInputs.cache
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.sourcelink.json
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.dll
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/refint/PuzzleSolver.dll
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.pdb
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/PuzzleSolver.genruntimeconfig.cache
+/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/obj/Debug/net8.0/ref/PuzzleSolver.dll

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "cpxZMFtW+ZyRSs+BhURqB9C2yF5jfqNGvvE8dLBaDPBPqmWG6+jlgqXlBmAdbc8zvFgWpB5nc9pCQyAiq8h+6w==",
+  "success": true,
+  "projectFilePath": "/home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver/PuzzleSolver.csproj",
+  "expectedPackageFiles": [
+    "/home/micromolecule001/.nuget/packages/microsoft.aspnetcore.app.ref/8.0.8/microsoft.aspnetcore.app.ref.8.0.8.nupkg.sha512"
+  ],
+  "logs": []
+}
