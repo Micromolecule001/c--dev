@@ -103,3 +103,9 @@
 /home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver.Tests/obj/Debug/net8.0/PuzzleSolver.Tests.pdb
 /home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver.Tests/obj/Debug/net8.0/PuzzleSolver.Tests.genruntimeconfig.cache
 /home/micromolecule001/Projects/sharpnet/Lab1/PuzzleSolver.Tests/obj/Debug/net8.0/ref/PuzzleSolver.Tests.dll
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.csproj.AssemblyReference.cache
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.GeneratedMSBuildEditorConfig.editorconfig
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.AssemblyInfoInputs.cache
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.AssemblyInfo.cs
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.csproj.CoreCompileInputs.cache
+C:\Univ\crossplatform-dev\Lab1\PuzzleSolver.Tests\obj\Debug\net8.0\PuzzleSolver.Tests.sourcelink.json

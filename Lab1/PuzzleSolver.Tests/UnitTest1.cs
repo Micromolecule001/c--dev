@@ -1,104 +1,77 @@
-using System;
-using System.Collections.Generic;
+using PuzzleSolver;
 
-namespace PuzzleSolver
+namespace PuzzleSolver.Tests;
 {
-    public class Puzzle
+    public class PuzzleSolverTests
     {
-        public char[,] _grid;
-        public bool[,] _visited;
-
-        // Directions for moving in the grid (up, down, left, right)
-        public static readonly (int, int)[] Directions = 
+        [Fact]
+        public void TestFindWord()
         {
-            (-1, 0), // Up
-            (1, 0),  // Down
-            (0, -1), // Left
-            (0, 1)   // Right
-        };
+            char[,] grid = {
+                { 'p', 'r', 'o', 'b', 'l' },
+                { 'e', 'm', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' }
+            };
 
-        public Puzzle(char[,] grid)
-        {
-            _grid = grid;
-            _visited = new bool[grid.GetLength(0), grid.GetLength(1)];
+            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);  // Use fully qualified class name
+            bool result = solver.FindWord("problem");
+
+            Assert.True(result);
         }
 
-        public List<char> Solve(List<string> words)
+        [Fact]
+        public void TestRemoveWord()
         {
-            // Find and mark each word
-            foreach (var word in words)
-            {
-                for (int i = 0; i < _grid.GetLength(0); i++)
-                {
-                    for (int j = 0; j < _grid.GetLength(1); j++)
-                    {
-                        if (FindWord(i, j, word, 0))
-                        {
-                            MarkWord(i, j, word);
-                        }
-                    }
-                }
-            }
+            char[,] grid = {
+                { 'p', 'r', 'o', 'b', 'l' },
+                { 'e', 'm', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' }
+                { 'x', 'x', 'x', 'x', 'x' }
+            };
 
-            // Collect remaining letters
-            var remainingLetters = new HashSet<char>();
-            for (int i = 0; i < _grid.GetLength(0); i++)
-            {
-                for (int j = 0; j < _grid.GetLength(1); j++)
-                {
-                    if (!_visited[i, j])
-                    {
-                        remainingLetters.Add(_grid[i, j]);
-                    }
-                }
-            }
+            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
+            solver.RemoveWord("problem");
+            var remaining = solver.GetRemainingLetters();
 
-            var remainingList = new List<char>(remainingLetters);
-            remainingList.Sort();
-            return remainingList;
+            Assert.DoesNotContain('p', remaining);
+        }
+    
+        [Fact]
+        public void TestGetRemainingLetters()
+        {
+            char[,] grid = {
+                { 'p', 'r', 'o', 'b', 'l' },
+                { 'e', 'm', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' }
+            };
+
+            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
+            solver.RemoveWord("problem");
+            List<char> remainingLetters = solver.GetRemainingLetters();
+
+            var expectedRemaining = new List<char> { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };
+
+            Assert.Equal(expectedRemaining, remainingLetters);
         }
 
-        public bool FindWord(int x, int y, string word, int index)
+        [Fact]
+        public void TestPrintGrid()
         {
-            if (index == word.Length)
-            {
-                return true; // Found the word
-            }
+            char[,] grid = {
+                { 'p', 'r', 'o', 'b', 'l' },
+                { 'e', 'm', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' },
+                { 'x', 'x', 'x', 'x', 'x' }
+            };
 
-            if (x < 0 || x >= _grid.GetLength(0) || y < 0 || y >= _grid.GetLength(1) || 
-                _visited[x, y] || _grid[x, y] != word[index])
-            {
-                return false; // Out of bounds or already visited or letter mismatch
-            }
-
-            // Mark the cell as visited
-            _visited[x, y] = true;
-
-            // Check all four directions
-            foreach (var (dx, dy) in Directions)
-            {
-                if (FindWord(x + dx, y + dy, word, index + 1))
-                {
-                    return true;
-                }
-            }
-
-            // Unmark the cell (backtrack)
-            _visited[x, y] = false;
-            return false;
-        }
-
-        public void MarkWord(int x, int y, string word)
-        {
-            // Mark the word in the grid
-            for (int i = 0; i < word.Length; i++)
-            {
-                if (x >= 0 && x < _grid.GetLength(0) && y >= 0 && y < _grid.GetLength(1) &&
-                    _grid[x, y] == word[i])
-                {
-                    _visited[x, y] = true;
-                }
-            }
+            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
+            solver.PrintGrid();
         }
     }
 }
