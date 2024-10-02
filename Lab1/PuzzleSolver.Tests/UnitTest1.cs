@@ -1,77 +1,72 @@
-using PuzzleSolver;
+using Xunit;
 
-namespace PuzzleSolver.Tests;
+public class PuzzleSolverTests
 {
-    public class PuzzleSolverTests
+    [Fact]
+    public void Test_SearchWord_True()
     {
-        [Fact]
-        public void TestFindWord()
-        {
-            char[,] grid = {
-                { 'p', 'r', 'o', 'b', 'l' },
-                { 'e', 'm', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' }
-            };
+        char[,] grid = {
+            {'A', 'B', 'C', 'D'},
+            {'E', 'F', 'G', 'H'},
+            {'I', 'J', 'K', 'L'},
+            {'M', 'N', 'O', 'P'}
+        };
 
-            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);  // Use fully qualified class name
-            bool result = solver.FindWord("problem");
+        var solver = new PuzzleSolver(grid, 4);
+        
+        bool result = solver.SearchWord("ABCGKOP", 0, 0, 0);
+        
+        Assert.True(result);
+    }
 
-            Assert.True(result);
-        }
+    [Fact]
+    public void Test_FindWord_True()
+    {
+        char[,] grid = {
+            {'A', 'B'},
+            {'C', 'D'}
+        };
 
-        [Fact]
-        public void TestRemoveWord()
-        {
-            char[,] grid = {
-                { 'p', 'r', 'o', 'b', 'l' },
-                { 'e', 'm', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' }
-                { 'x', 'x', 'x', 'x', 'x' }
-            };
+        var solver = new PuzzleSolver(grid, 2);
 
-            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
-            solver.RemoveWord("problem");
-            var remaining = solver.GetRemainingLetters();
+        bool result = solver.FindWord("BDCA");
 
-            Assert.DoesNotContain('p', remaining);
-        }
-    
-        [Fact]
-        public void TestGetRemainingLetters()
-        {
-            char[,] grid = {
-                { 'p', 'r', 'o', 'b', 'l' },
-                { 'e', 'm', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' }
-            };
+        Assert.True(result);
+    }
 
-            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
-            solver.RemoveWord("problem");
-            List<char> remainingLetters = solver.GetRemainingLetters();
+    [Fact]
+    public void Test_SearchAndRemove_True()
+    {
+        char[,] grid = {
+            {'A', 'B', 'C', 'D'},
+            {'E', 'F', 'G', 'H'},
+            {'I', 'J', 'K', 'L'},
+            {'M', 'N', 'O', 'P'}
+        };
 
-            var expectedRemaining = new List<char> { 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x', 'x' };
+        var solver = new PuzzleSolver(grid, 4);
 
-            Assert.Equal(expectedRemaining, remainingLetters);
-        }
+        bool result = solver.SearchAndRemove("ABCGKOP", 0, 0, 0);
+        
+        Assert.True(result);
+    }
 
-        [Fact]
-        public void TestPrintGrid()
-        {
-            char[,] grid = {
-                { 'p', 'r', 'o', 'b', 'l' },
-                { 'e', 'm', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' },
-                { 'x', 'x', 'x', 'x', 'x' }
-            };
+    [Fact]
+    public void Test_GetRemainingLetters_True()
+    {
+        char[,] grid = {
+            {'-', '-', '-', '-'},
+            {'-', 'F', '-', 'H'},
+            {'-', '-', '-', 'L'},
+            {'M', 'N', '-', '-'}
+        };
 
-            var solver = new PuzzleSolver.PuzzleSolver(grid, 5);
-            solver.PrintGrid();
-        }
+        var solver = new PuzzleSolver(grid, 4);
+
+        List<char> result = solver.GetRemainingLetters();
+        
+        List<char> expected = new List<char> { 'F', 'H', 'L', 'M', 'N' };
+
+        Assert.Equal(expected, result);
     }
 }
