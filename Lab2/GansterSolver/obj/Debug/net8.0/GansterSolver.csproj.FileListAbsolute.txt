@@ -1,0 +1,15 @@
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\bin\Debug\net8.0\GansterSolver.exe
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\bin\Debug\net8.0\GansterSolver.deps.json
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\bin\Debug\net8.0\GansterSolver.runtimeconfig.json
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\bin\Debug\net8.0\GansterSolver.dll
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\bin\Debug\net8.0\GansterSolver.pdb
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.GeneratedMSBuildEditorConfig.editorconfig
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.AssemblyInfoInputs.cache
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.AssemblyInfo.cs
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.csproj.CoreCompileInputs.cache
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.sourcelink.json
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.dll
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\refint\GansterSolver.dll
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.pdb
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\GansterSolver.genruntimeconfig.cache
+C:\Univ\crossplatform-dev\Lab2\GansterSolver\obj\Debug\net8.0\ref\GansterSolver.dll
