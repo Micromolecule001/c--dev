@@ -1,0 +1,27 @@
+# Ignore bin and obj directories
+bin/
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+**/packages/*
+!**/packages/build/**
+
+# Ignore RAR archives
+*.rar
+
+# Ignore executables
+*.exe
+*.dll
+
+# Ensure .gitignore file is present
+!.gitignore
+
+# Ignore Visual Studio solution user options files
+*.suo
+
+# Ignore IntelliJ IDEA project files
+.idea/
+
+# Ignore Visual Studio Code workspace settings
+.vscode/
