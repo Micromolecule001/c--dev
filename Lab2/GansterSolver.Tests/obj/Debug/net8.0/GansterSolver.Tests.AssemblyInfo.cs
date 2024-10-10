@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GansterSolver.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+97ad9b7181c7934118a01648e6e975feaa126bbc")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d9ae755a6f0ddd7dd35a0d3a485ffc3b18887f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("GansterSolver.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GansterSolver.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

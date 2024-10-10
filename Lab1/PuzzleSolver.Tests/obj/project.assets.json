@@ -1097,7 +1097,7 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dimab\\.nuget\\packages\\": {}
+    "C:\\Users\\Micromolecule001\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1105,11 +1105,11 @@
       "projectUniqueName": "C:\\Univ\\crossplatform-dev\\Lab1\\PuzzleSolver.Tests\\PuzzleSolver.Tests.csproj",
       "projectName": "PuzzleSolver.Tests",
       "projectPath": "C:\\Univ\\crossplatform-dev\\Lab1\\PuzzleSolver.Tests\\PuzzleSolver.Tests.csproj",
-      "packagesPath": "C:\\Users\\dimab\\.nuget\\packages\\",
+      "packagesPath": "C:\\Users\\Micromolecule001\\.nuget\\packages\\",
       "outputPath": "C:\\Univ\\crossplatform-dev\\Lab1\\PuzzleSolver.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\dimab\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Micromolecule001\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
@@ -1181,7 +1181,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
