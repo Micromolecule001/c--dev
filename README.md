@@ -22,4 +22,5 @@ dotnet Tests            # to check work of tests
 ## Done list
 Lab1 \
 Lab2 \
+Lab3 \
 \
