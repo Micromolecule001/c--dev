@@ -7,16 +7,12 @@ Name: Boyko Dmitriy
 
 
 # 
-## Usage/Examples
+## Usage
 
-```Terminal
-cd LabN/
-
-cd ProjectName/          
-dotnet run              # to check work of algorithm
-
-cd ProjectName.Tests/
-dotnet Tests            # to check work of tests
+```
+  dotnet build Build.proj -p:Solution={LabNumber} -t:Build
+  dotnet build Build.proj -p:Solution={LabNumber} -t:Run
+  dotnet build Build.proj -p:Solution={LabNumber} -t:Test
 ```
 
 ## Done list
