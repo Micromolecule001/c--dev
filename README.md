@@ -1,5 +1,5 @@
 
-# Cross-platform programming assigments repository
+# Crossplatform programming assigments repository
 
 Group: IPZ-34ms Var №33 \
 Name: Boyko Dmitriy
