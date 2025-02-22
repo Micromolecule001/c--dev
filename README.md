@@ -1,5 +1,5 @@
 
-# Crossplatform programming assigments repository
+# Crossplatforming-dev university ( C# )
 
 Group: IPZ-34ms Var №33 \
 Name: Boyko Dmitriy
